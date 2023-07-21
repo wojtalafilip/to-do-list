@@ -1,0 +1,11 @@
+export const day = document.querySelector(`.date__day`);
+export const month = document.querySelector(`.date__month`);
+export const removeAllBtn = document.querySelector(`.remove_all__btn`);
+export const inputField = document.querySelector(`.input__field`);
+export const addBtn = document.querySelector(`.input__btn`);
+export const stateContainer = document.querySelector(`.state`);
+export const stateAllBtn = document.querySelector(`.state__btn--all`);
+export const stateDoneBtn = document.querySelector(`.state__btn--done`);
+export const stateRemainBtn = document.querySelector(`.state__btn--remain`);
+export const tasksContainer = document.querySelector(`.tasks__container`);
+export const removeBtn = document.querySelector(`.task__remove-btn`);

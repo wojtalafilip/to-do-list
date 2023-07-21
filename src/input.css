@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.state__btn--active {
+  @apply bg-teal-600 text-white;
+}
+
+.task__data--done {
+  @apply text-gray-400 italic line-through;
+}
