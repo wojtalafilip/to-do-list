@@ -44,7 +44,7 @@ stateContainer.onclick = function (event) {
 stateAllBtn.addEventListener(`click`, () => {
   removeAllTasks();
   modifyActiveState(1);
-  renderTasks(tasksArr);
+  renderTasks(tasksArr, activeState);
 });
 
 stateDoneBtn.addEventListener(`click`, () => {
@@ -64,7 +64,6 @@ tasksContainer.onclick = function (event) {
   if (event.srcElement.localName === `button`) return;
   let task = event.target.closest(`div`);
   updateData(task);
-  console.log(`UPDATE`, tasksArr);
   removeAllTasks();
   renderTasks(tasksArr, activeState);
 };

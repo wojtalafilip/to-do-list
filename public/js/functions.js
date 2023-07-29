@@ -97,6 +97,7 @@ export const renderTasks = (arr, stateNumber) => {
       );
       if (stateNumber != 1) tasksArr.splice(taskIndex, 1);
       localStorage.setItem(`tasksArr`, JSON.stringify(tasksArr));
+      console.log(tasksArr);
       removeAllTasks();
       renderTasks(activeArr, activeState);
     });
@@ -115,6 +116,7 @@ export const changeState = (event) => {
 export const updateData = (task) => {
   const activeTask = tasksArr.find((element) => element.id === +task.id);
   const activeTaskIndex = tasksArr.indexOf(activeTask);
+  if (tasksArr[activeTaskIndex].done === undefined) return;
   tasksArr[activeTaskIndex].done = !activeTask.done;
   localStorage.setItem(`tasksArr`, JSON.stringify(tasksArr));
 };
