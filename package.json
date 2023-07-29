@@ -4,7 +4,7 @@
   "description": "Simple to-do list app",
   "scripts": {
     "start": "parcel public/index.html",
-    "tail": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "tail": "npx tailwindcss -i ./src/input.css -o /dist/output.css --watch",
     "build": "parcel build public/index.html --dist-dir ./dist"
   },
   "author": "Filip Wojtala",
