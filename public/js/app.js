@@ -22,7 +22,6 @@ import {
 window.addEventListener(`load`, () => {
   setDate();
   renderTasks(tasksArr);
-  console.log(`LOAD`, tasksArr);
 });
 
 removeAllBtn.addEventListener(`click`, () => {
@@ -35,7 +34,6 @@ addBtn.addEventListener(`click`, () => {
   removeAllTasks();
   renderTasks(tasksArr);
   baseState();
-  console.log(`ADD`, tasksArr);
 });
 
 stateContainer.onclick = function (event) {
