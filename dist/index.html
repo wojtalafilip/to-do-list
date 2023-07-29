@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="m-0 box-border p-0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/fav-icon.e3bc1fd9.png">
+    <link href="/index.4110e2cc.css" rel="stylesheet">
+    <title>To-Do List</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="/index.95016fb6.js" defer=""></script>
+  </head>
+  <body class="flex h-screen w-screen justify-center bg-gradient-to-tr from-green-600 to-sky-600 font-sans">
+    <main class="m-3 flex max-h-full w-full max-w-md flex-col gap-4 rounded-xl bg-white p-5">
+      <!-- HEADER -->
+
+      <div class="header flex items-start justify-between text-zinc-800">
+        <div class="date text-2xl font-semibold">
+          <p class="date__day"></p>
+          <p class="date__month"></p>
+        </div>
+        <div class="remove">
+          <button class="remove_all__btn rounded-full bg-red-500 px-3 text-white">
+            Remove all
+          </button>
+        </div>
+      </div>
+
+      <!-- INPUT -->
+
+      <div class="input flex items-center justify-between rounded-full bg-gray-100">
+        <textarea spellcheck="false" placeholder="What's Up?" class="input__field ml-4 h-6 w-8/12 resize-none bg-transparent outline-none"></textarea>
+        <button class="input__btn inline-block h-12 w-20 rounded-full bg-teal-600 text-white">
+          Add
+        </button>
+      </div>
+
+      <!-- STATE -->
+
+      <div class="state my-1 flex place-content-center gap-4 text-lg text-zinc-900">
+        <button class="state__btn state__btn--all state__btn--active rounded-full px-3">
+          All
+        </button>
+        <button class="state__btn state__btn--done rounded-full px-3">
+          Done
+        </button>
+        <button class="state__btn state__btn--remain rounded-full px-3">
+          Remain
+        </button>
+      </div>
+
+      <!-- TASKS -->
+
+      <div class="tasks__container overflow-scroll overflow-x-hidden border-t text-lg text-zinc-900"></div>
+    </main>
+  </body>
+</html>
